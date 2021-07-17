@@ -153,6 +153,6 @@ inquirer
     const readmeContent = skeleton(answers);
 
     fs.writeFile('README.md', readmeContent, (err) =>
-      err ? console.log(err) : console.log('Successfully created index.html!')
+      err ? console.log(err) : console.log('README.md created')
     );
   });
