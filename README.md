@@ -13,7 +13,7 @@
 
 &nbsp;
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)](https://opendatacommons.org/licenses/odbl/)
 
 &nbsp;
 
@@ -30,14 +30,14 @@
 
 <a name="installation"></a>
 ## **Installation**  
-Don't be a jerk!  
+npm install inquirer  
 
 
 &nbsp;
 
 <a name="usage"></a>
 ## **Usage**  
-Clone the repository separately, and contact david.a.lucio@gmail.com for other contribution requests.  
+N/A  
 
 &nbsp;
 
@@ -58,8 +58,8 @@ N/A
 <a name="questions"></a>
 ## **Questions**  
 
-Email: 
+Email: david.a.lucio@gmail.com
 
-GitHub: [](http://github.com/)  
+GitHub: [davidlucio](http://github.com/davidlucio)  
 
-LinkedIn: [](https://www.linkedin.com/in/)
+LinkedIn: [davidlucio](https://www.linkedin.com/in/davidlucio)
