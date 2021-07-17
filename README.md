@@ -1,28 +1,28 @@
-# ${answers.projname}
+# Test
 
-## By: ${answers.username}
+## By: David
 
 <a name="back"></a>
 ### Table of Contents
 
 * [Installation](#installation)
 * [Usage](#usage)
-* [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)
-* [Contact & Questions](#questions)
+* [Questions](#questions)
+
+
+undefined
 
 &nbsp;
 
-LICENSE BADGE!
-
 > ## **Description**<br/>
-> ${answers.desccription}<br/>
+> undefined<br/>
 > 
 > &nbsp;
 >
 > ## **Tech used**<br/>
-> ${answers.techused}  
+> undefined  
 >
 > &nbsp;
 
@@ -30,49 +30,36 @@ LICENSE BADGE!
 
 <a name="installation"></a>
 ## Installation  
-${answers.installation}  
-[Back to top](#back)
+Make sure you install stuff  
+
 
 &nbsp;
 
 <a name="usage"></a>
 ## Usage  
-${answers.usage}  
-[Back to top](#back)
-
-&nbsp;
-
-<a name="license"></a>
-## License
-
-WHEN I choose a license for my application from a list of options
-THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-
-${answers.license}  
-[Back to top](#back)
+Don't be a dick.  
 
 &nbsp;
 
 <a name="contributing"></a>
 ## Contributing
-${answers.contributing}  
-[Back to top](#back)
+undefined  
+
 
 &nbsp;
 
 <a name="tests"></a>
 ## Tests
-${answers.tests}  
-[Back to top](#back)
+N/A  
+
 
 &nbsp;
 
 <a name="questions"></a>
+## Questions
 
-## Contact and Questions
+Email: [david.a.lucio@gmail.com](mailto:{answers.email})  
 
-GitHub: [${answers.githubname}](http://github.com${answers.githubname})
+GitHub: [davidlucio](http://github.comdavidlucio)  
 
-Email: [${answers.useremail}](mailto:{answers.useremail})  
-
-[Back to top](#back)
+LinkedIn: [davidlucio](https://www.linkedin.com/in/david.a.lucio@gmail.com)
