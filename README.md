@@ -1,4 +1,4 @@
-# Readme Generator
+# README Generator
 
 ## By: David Lucio
 
@@ -11,55 +11,55 @@
 * [Tests](#tests)
 * [Questions](#questions)
 
+&nbsp;
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 &nbsp;
 
 > ## **Description**<br/>
-> undefined<br/>
+> This is the README Generator project for the UW bootcamp. Homework 09<br/>
 > 
 > &nbsp;
 >
 > ## **Tech used**<br/>
-> undefined  
->
-> &nbsp;
+> js, markup  
+> <br/>
 
-
+&nbsp;
 
 <a name="installation"></a>
-## Installation  
-npm install inquirer  
+## **Installation**  
+Don't be a jerk!  
 
 
 &nbsp;
 
 <a name="usage"></a>
-## Usage  
-Copy to your personal repo; clones will not be given push permission.  
+## **Usage**  
+Clone the repository separately, and contact david.a.lucio@gmail.com for other contribution requests.  
 
 &nbsp;
 
 <a name="contributing"></a>
-## Contributing
-undefined  
+## **Contributing**
+Clone the repository separately, and contact david.a.lucio@gmail.com for other contribution requests.  
 
 
 &nbsp;
 
 <a name="tests"></a>
-## Tests
+## **Tests**  
 N/A  
 
 
 &nbsp;
 
 <a name="questions"></a>
-## Questions
+## **Questions**  
 
-Email: [david.a.lucio@gmail.com](mailto:{answers.email})  
+Email: 
 
-GitHub: [davidlucio](http://github.comdavidlucio)  
+GitHub: [](http://github.com/)  
 
-LinkedIn: [davidlucio](https://www.linkedin.com/in/david.a.lucio@gmail.com)
+LinkedIn: [](https://www.linkedin.com/in/)

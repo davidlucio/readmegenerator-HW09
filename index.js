@@ -30,7 +30,7 @@ ${answers.license}
 >
 > ## **Tech used**<br/>
 > ${answers.techused}  
->  
+> <br/>
 
 &nbsp;
 
@@ -49,7 +49,7 @@ ${answers.usage}
 
 <a name="contributing"></a>
 ## **Contributing**
-${answers.contributing}  
+${answers.contribution}  
 
 
 &nbsp;
@@ -64,11 +64,11 @@ ${answers.tests}
 <a name="questions"></a>
 ## **Questions**  
 
-Email: [${answers.email}](mailto:{answers.email})  
+Email: ${answers.email}
 
-GitHub: [${answers.github}](http://github.com${answers.github})  
+GitHub: [${answers.github}](http://github.com/${answers.github})  
 
-LinkedIn: [${answers.linkedin}](https://www.linkedin.com/in/${answers.email})`;
+LinkedIn: [${answers.linkedin}](https://www.linkedin.com/in/${answers.linkedin})`;
 
 /** List of Licenses **/
 const licenses = {
@@ -133,13 +133,13 @@ inquirer
     },
     {
       type: 'input',
-      name: 'github',
-      message: 'Enter your GitHub username:'
+      name: 'email',
+      message: 'Enter your email address:'
     },
     {
       type: 'input',
-      name: 'email',
-      message: 'Enter your email address:'
+      name: 'github',
+      message: 'Enter your GitHub username:'
     },
     {
       type: 'input',
