@@ -17,52 +17,52 @@ const skeleton = (answers) =>
 * [Tests](#tests)
 * [Questions](#questions)
 
+&nbsp;
 
 ${answers.license}
 
 &nbsp;
 
 > ## **Description**<br/>
-> ${answers.desccription}<br/>
+> ${answers.description}<br/>
 > 
 > &nbsp;
 >
 > ## **Tech used**<br/>
 > ${answers.techused}  
->
-> &nbsp;
+>  
 
-
+&nbsp;
 
 <a name="installation"></a>
-## Installation  
+## **Installation**  
 ${answers.installation}  
 
 
 &nbsp;
 
 <a name="usage"></a>
-## Usage  
+## **Usage**  
 ${answers.usage}  
 
 &nbsp;
 
 <a name="contributing"></a>
-## Contributing
+## **Contributing**
 ${answers.contributing}  
 
 
 &nbsp;
 
 <a name="tests"></a>
-## Tests
+## **Tests**  
 ${answers.tests}  
 
 
 &nbsp;
 
 <a name="questions"></a>
-## Questions
+## **Questions**  
 
 Email: [${answers.email}](mailto:{answers.email})  
 
@@ -101,6 +101,11 @@ inquirer
       type: 'input',
       name: 'description',
       message: 'Give a brief description of the project:'
+    },
+    {
+      type: 'input',
+      name: 'techused',
+      message: 'What languages and technologies were used?'
     },
     {
       type: 'input',

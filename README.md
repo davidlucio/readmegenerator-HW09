@@ -1,6 +1,6 @@
-# Test
+# Readme Generator
 
-## By: David
+## By: David Lucio
 
 <a name="back"></a>
 ### Table of Contents
@@ -12,7 +12,7 @@
 * [Questions](#questions)
 
 
-undefined
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 &nbsp;
 
@@ -30,14 +30,14 @@ undefined
 
 <a name="installation"></a>
 ## Installation  
-Make sure you install stuff  
+npm install inquirer  
 
 
 &nbsp;
 
 <a name="usage"></a>
 ## Usage  
-Don't be a dick.  
+Copy to your personal repo; clones will not be given push permission.  
 
 &nbsp;
 
