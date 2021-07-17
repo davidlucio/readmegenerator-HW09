@@ -1,0 +1,23 @@
+{
+  "name": "readmegenerator-HW09",
+  "version": "1.0.0",
+  "description": "Professional README Generator - Assignment 09 - UW Bootcamp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidlucio/readmegenerator-HW09.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidlucio/readmegenerator-HW09/issues"
+  },
+  "homepage": "https://github.com/davidlucio/readmegenerator-HW09#readme",
+  "dependencies": {
+    "inquirer": "^8.1.2"
+  }
+}
