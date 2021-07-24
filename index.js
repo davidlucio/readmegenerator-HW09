@@ -1,89 +1,156 @@
+/** Requirements **/
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const licenses = [
+/** Instantiate the skeleton of the README file **/
+const skeleton = (answers) =>
+`# ${answers.projname}
 
-]
+## By: ${answers.username}
 
-const readmeSkeleton = (answers) =>
-``;
+<a name="back"></a>
+### Table of Contents
 
-const skeletonHead = 
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
-// Note for license:
-// Use list
-// common: BSD, MIT, GPL?
-// Write to "LICENSE.txt"?
+&nbsp;
 
-const inquirer = require('inquirer');
-const fs = require('fs');
+${answers.license}
 
-const generateHTML = (answers) =>
-  `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <title>Document</title>
-</head>
-<body>
-  <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Hi! My name is ${answers.name}</h1>
-    <p class="lead">I am from ${answers.location}.</p>
-    <h3>Example heading <span class="badge badge-secondary">Contact Me</span></h3>
-    <ul class="list-group">
-      <li class="list-group-item">My GitHub username is ${answers.github}</li>
-      <li class="list-group-item">LinkedIn: ${answers.linkedin}</li>
-    </ul>
-  </div>
-</div>
-</body>
-</html>`;
+&nbsp;
 
+> ## **Description**<br/>
+> ${answers.description}<br/>
+> 
+> &nbsp;
+>
+> ## **Tech used**<br/>
+> ${answers.techused}  
+> <br/>
+
+&nbsp;
+
+<a name="installation"></a>
+## **Installation**  
+${answers.installation}  
+
+
+&nbsp;
+
+<a name="usage"></a>
+## **Usage**  
+${answers.usage}  
+
+&nbsp;
+
+<a name="contributing"></a>
+## **Contributing**
+${answers.contribution}  
+
+
+&nbsp;
+
+<a name="tests"></a>
+## **Tests**  
+${answers.tests}  
+
+
+&nbsp;
+
+<a name="questions"></a>
+## **Questions**  
+
+Email: ${answers.email}
+
+GitHub: [${answers.github}](http://github.com/${answers.github})  
+
+LinkedIn: [${answers.linkedin}](https://www.linkedin.com/in/${answers.linkedin})`;
+
+/** List of Licenses **/
+const licenses = {
+  'MIT'   : `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`,
+  'ODbL'  : `[![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)](https://opendatacommons.org/licenses/odbl/)`,
+  'BSD'   : `[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`
+};
+
+/** Questions **/
 inquirer
   .prompt([
     {
       type: 'input',
-      name: 'name',
-      message: 'What is your name?',
+      name: 'projname',
+      message: 'What is the name of the project?'
     },
     {
       type: 'input',
-      name: 'location',
-      message: 'Where are you from?',
+      name: 'username',
+      message: 'Who is the project owner?'
+    },
+    {
+      type: 'list',
+      name: 'license',
+      message: 'Preferred License',
+      choices: ['MIT', 'ODbL', 'BSD'],
+      default: 'MIT'
     },
     {
       type: 'input',
-      name: 'hobby',
-      message: 'What is your favorite hobby?',
+      name: 'description',
+      message: 'Give a brief description of the project:'
     },
     {
       type: 'input',
-      name: 'food',
-      message: 'What is your favorite food?',
+      name: 'techused',
+      message: 'What languages and technologies were used?'
+    },
+    {
+      type: 'input',
+      name: 'installation',
+      message: 'Are there any additional installation instuctions?',
+      default: "N/A"
+    },
+    {
+      type: 'input',
+      name: 'usage',
+      message: 'Are there any additional rules for usage?',
+      default: "N/A"
+    },
+    {
+      type: 'input',
+      name: 'contribution',
+      message: 'Set a list of rules for contibuting to project:',
+      default: 'Clone the repository separately, and contact david.a.lucio@gmail.com for other contribution requests.'
+    },
+    {
+      type: 'input',
+      name: 'tests',
+      message: 'What are the test cases?',
+      default: 'N/A'
+    },
+    {
+      type: 'input',
+      name: 'email',
+      message: 'Enter your email address:'
     },
     {
       type: 'input',
       name: 'github',
-      message: 'Enter your GitHub Username',
+      message: 'Enter your GitHub username:'
     },
     {
       type: 'input',
       name: 'linkedin',
-      message: 'Enter your LinkedIn URL.',
-    },
+      message: 'Enter your LinkedIn username:'
+    }
   ])
   .then((answers) => {
-    const htmlPageContent = generateHTML(answers);
 
-    fs.writeFile('index.html', htmlPageContent, (err) =>
-      err ? console.log(err) : console.log('Successfully created index.html!')
-    );
-  });
-
-
+    answers.license = licenses[answers.license];
+    const readmeContent = skeleton(answers);
 
 
 /**
@@ -99,3 +166,8 @@ inquirer
   // DON'T FORGET A VIDEO!
 
 /**/
+
+    fs.writeFile('README.md', readmeContent, (err) =>
+      err ? console.log(err) : console.log('README.md created')
+    );
+  });
