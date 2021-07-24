@@ -32,6 +32,10 @@ ${answers.license}
 > ${answers.techused}  
 > <br/>
 
+*Completed Assignment*: [Deployment Link](${answers.deployment})
+
+![First Iteration of Portfolio Page](./assets/images/screenshot.png)
+
 &nbsp;
 
 <a name="installation"></a>
@@ -129,6 +133,12 @@ inquirer
       type: 'input',
       name: 'tests',
       message: 'What are the test cases?',
+      default: 'N/A'
+    },
+    {
+      type: 'input',
+      name: 'deployment',
+      message: 'What is the deployment URL?',
       default: 'N/A'
     },
     {
